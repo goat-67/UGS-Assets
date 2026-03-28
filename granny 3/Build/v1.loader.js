@@ -59,8 +59,9 @@ function createUnityInstance(t, n, d) {
     disabledCanvasEvents: ["contextmenu", "dragstart"]
   };
   for (o in e(n, "companyName", "Unity"), e(n, "productName", "WebGL Player"), e(n, "productVersion", "1.0"), n) c[o] = n[o];
-  c.streamingAssetsUrl = new URL(c.streamingAssetsUrl, document.URL).href;
-  var i = c.disabledCanvasEvents.slice();
+ c.streamingAssetsUrl = "StreamingAssets";
+
+var i = c.disabledCanvasEvents.slice();
 
   function s(e) {
     e.preventDefault()
